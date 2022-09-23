@@ -21,6 +21,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+
   
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -233,19 +234,19 @@ import {
   const NAV_ITEMS: Array<NavItem> = [
     {
       label: 'Inicio',
-      href:'#'
+      href:'/'
     },
     {
       label: 'Tratamientos',
-      href:'#'
+      href:'#Tratamientos'
     },
     {
       label: 'Promociones',
-      href: '#',
+      href: 'Promociones',
     },
     {
       label: 'Conocenos',
-      href: '#',
+      href: 'Conocenos',
     },
     {
         label: 'Contacto',

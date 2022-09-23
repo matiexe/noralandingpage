@@ -8,6 +8,7 @@ interface FeatureProps {
   title: string;
   text: string;
   icon: ReactElement;
+  section:string;
 }
 
 const Feature = ({ title, text, icon }: FeatureProps) => {
@@ -32,7 +33,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function SimpleThreeColumns() {
   return (
-    <Box p={10}>
+    <Box p={10} id='Tratamientos'>
       <Heading mb={10}>Tratamientos</Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
       
