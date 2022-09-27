@@ -55,31 +55,23 @@ const SocialButton = ({
 export default function LargeWithAppLinksAndSocial() {
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      bg={useColorModeValue('pink.400', 'gray.900')}
+      color={useColorModeValue('gray.50', 'gray.200')}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={8}>
           <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About Us</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Careers</Link>
-            <Link href={'#'}>Contact Us</Link>
+            <ListHeader>Localizacion</ListHeader>
+            <Link href={'#'}>Rio Gallegos Santa Cruz</Link>
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Support</ListHeader>
-            <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Safety Center</Link>
-            <Link href={'#'}>Community Guidelines</Link>
+            <ListHeader>Telefonos</ListHeader>
+            <Link href={'#'}>29661112222</Link>
           </Stack>
 
           <Stack align={'flex-start'}>
-            <ListHeader>Legal</ListHeader>
-            <Link href={'#'}>Cookies Policy</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Law Enforcement</Link>
+            <ListHeader>Horarios</ListHeader>
+            <Link href={'#'}>Lunes a Sabados 10am a 18</Link>
           </Stack>
 
         </SimpleGrid>

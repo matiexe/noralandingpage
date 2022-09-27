@@ -21,7 +21,14 @@ export default function CallToActionWithAnnotation() {
         /> */}
       </Head>
 
-      <Container maxW={'12x3'} backgroundColor={'pink.900'}>
+      <Container 
+        maxW={'12x3'} 
+        backgroundColor={'pink.900'} 
+        backgroundImage={'url(https://images.pexels.com/photos/5659016/pexels-photo-5659016.jpeg?cs=srgb&dl=pexels-ivan-samkov-5659016.jpg&fm=jpg)'}
+        backgroundSize={'cover'}
+        backgroundPosition={'center'}
+        >
+        
         <Stack
           as={Box}
           textAlign={'center'}
