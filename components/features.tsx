@@ -34,8 +34,8 @@ const Feature = (props) => {
 export default function SimpleThreeColumns(props) {
   console.log(props)
   return (
-    <Box p={10} id='Tratamientos' backgroundColor={props.bkgcolor}>
-      <Heading mb={10}>{props.titulo}</Heading>
+    <Box p={10} id='Tratamientos' backgroundColor={props.bkgcolor} backgroundImage={props.bkgImage} backgroundRepeat={'no-repeat'} backgroundSize={'cover'}>
+      <Heading mb={10} color={props.colorT}>{props.titulo}</Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Card 
         tratamiento ='Tratamiento no invasivo' 
@@ -49,9 +49,7 @@ export default function SimpleThreeColumns(props) {
         tratamiento ='Tratamiento no invasivo' 
         titulo='Tratamientos tensor corporal' 
         descripcion='
-         Los tratamientos tratamientos corporales reductores 
-         y reafirmantes son tratamientos de estética corporal  que buscan reducir el volumen y la grasa localizada de algunas zonas del cuerpo
-        '
+        son tratamientos estéticos no quirúrgicos que buscan el remodelado corporal. Son tratamientos seguros, eficaces que no requieren pasar por quirófano y se les conoce como tratamientos de lifting sin cirugía'
         />
         <Card/> 
       </SimpleGrid>

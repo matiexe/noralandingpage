@@ -8,9 +8,13 @@ const IndexPage =()=>{
     <>
       <Hero/>
       <Features titulo='Tratamientos'/>
-      <Features titulo='Promociones' bkgcolor='#E9B8C5'/>
+      <Features 
+        colorT='white'
+        titulo='Promociones' 
+        bkgcolor='#E9B8C5'
+        bkgImage='url(https://images.pexels.com/photos/3673941/pexels-photo-3673941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)'  
+      />
          
-      <Features/>
       <Features titulo='Conocenos'/>
       <SmallWithLogoLeft/>
       
