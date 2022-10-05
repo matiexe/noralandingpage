@@ -10,12 +10,12 @@ import {
 } from '@chakra-ui/react';
 import Link from 'next/link';
 
-export default function blogPostWithImage() {
+export default function blogPostWithImage(props) {
   return (
     <Center py={6}>
       <Box
         maxW={'479px'}
-        w={'full'}
+        w={'479'}
         bgImg={'url(https://images.pexels.com/photos/5659016/pexels-photo-5659016.jpeg?cs=srgb&dl=pexels-ivan-samkov-5659016.jpg&fm=jpg)'}
         bgPosition={'center'}
         bgRepeat={'no-repeat'}
@@ -47,7 +47,7 @@ export default function blogPostWithImage() {
               fontSize={'sm'}
               letterSpacing={1.1}
               >
-              Tratamiento no invasivo
+              {props.tratamiento}
             </Text>
           </Box>
             
@@ -56,11 +56,10 @@ export default function blogPostWithImage() {
             color={'white'}
             fontSize={'2xl'}
             fontFamily={'body'}>
-            Tratamientos Reductores
+            {props.titulo}
           </Heading>
           <Text color={'white'}>
-          Los tratamientos tratamientos corporales reductores 
-y reafirmantes son tratamientos de estética corporal  que buscan reducir el volumen y la grasa localizada de algunas zonas del cuerpo
+         {props.descripcion}
           </Text>
         </Stack>
         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>

@@ -9,9 +9,10 @@ interface FeatureProps {
   text: string;
   icon: ReactElement;
   section:string;
+  bkgcolor:string;
 }
 
-const Feature = ({ title, text, icon }: FeatureProps) => {
+const Feature = (props) => {
   return (
     <Stack>
       <Flex
@@ -21,26 +22,38 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
         justify={'center'}
         color={'white'}
         rounded={'full'}
-        bg={'gray.100'}
+        backgroundColor={'#E9B8C5'}
         mb={1}>
-        {icon}
       </Flex>
-      <Text fontWeight={600}>{title}</Text>
-      <Text color={'gray.600'}>{text}</Text>
+      <Text fontWeight={600}></Text>
+      <Text color={'gray.600'}></Text>
     </Stack>
   );
 };
 
-export default function SimpleThreeColumns() {
+export default function SimpleThreeColumns(props) {
+  console.log(props)
   return (
-    <Box p={10} id='Tratamientos'>
-      <Heading mb={10}>Tratamientos</Heading>
+    <Box p={10} id='Tratamientos' backgroundColor={props.bkgcolor}>
+      <Heading mb={10}>{props.titulo}</Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-      
-        <Card/>
-        <Card/>
-        <Card/>
+        <Card 
+        tratamiento ='Tratamiento no invasivo' 
+        titulo='Tratamientos reductores' 
+        descripcion='
+         Los tratamientos tratamientos corporales reductores 
+         y reafirmantes son tratamientos de estética corporal  que buscan reducir el volumen y la grasa localizada de algunas zonas del cuerpo
         
+        '/>
+        <Card
+        tratamiento ='Tratamiento no invasivo' 
+        titulo='Tratamientos tensor corporal' 
+        descripcion='
+         Los tratamientos tratamientos corporales reductores 
+         y reafirmantes son tratamientos de estética corporal  que buscan reducir el volumen y la grasa localizada de algunas zonas del cuerpo
+        '
+        />
+        <Card/> 
       </SimpleGrid>
     </Box>
   );

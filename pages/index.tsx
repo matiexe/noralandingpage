@@ -6,11 +6,12 @@ import Features from '../components/features'
 const IndexPage =()=>{
   return(
     <>
-      <Navbar/>
       <Hero/>
+      <Features titulo='Tratamientos'/>
+      <Features titulo='Promociones' bkgcolor='#E9B8C5'/>
+         
       <Features/>
-      <Features/>
-      <Features/>
+      <Features titulo='Conocenos'/>
       <SmallWithLogoLeft/>
       
     </>

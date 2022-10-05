@@ -29,15 +29,20 @@ import {
     return (
       <Box>
         <Flex
-          bg={useColorModeValue('white', 'gray.800')}
+          bg={'transparent'}
           color={useColorModeValue('gray.600', 'white')}
-          minH={'60px'}
+          minH={'80px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
-          borderBottom={1}
-          borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
-          align={'center'}>
+          zIndex={10}
+          align={'center'}
+          boxSize={'full'}
+          pos={'relative'}
+          position={'sticky'}
+          top={0}
+          >
+          
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
@@ -59,17 +64,16 @@ import {
               Nora Estetica Integral
             </Text>
   
-            <Flex display={{ base: 'none', md: 'flex' }} ml={600}>
-            <DesktopNav />
+            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            
             </Flex>
           </Flex>
-  
-          <Stack
+          <Stack display={useBreakpointValue({ base: 'none', md: 'start' })}
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-            
+            <DesktopNav />
           </Stack>
         </Flex>
   
@@ -81,7 +85,7 @@ import {
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
+    const linkColor = useColorModeValue('#E823DE', 'gray.200');
     const linkHoverColor = useColorModeValue('gray.800', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
@@ -94,8 +98,8 @@ import {
                 <Link
                   p={2}
                   href={navItem.href ?? '#'}
-                  fontSize={'sm'}
-                  fontWeight={500}
+                  fontSize={'md'}
+                  fontWeight={800}
                   color={linkColor}
                   _hover={{
                     textDecoration: 'none',

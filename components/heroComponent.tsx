@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Navbar from '../components/navbarComponent'
 import {
   Box,
   Heading,
@@ -15,20 +16,18 @@ export default function CallToActionWithAnnotation() {
   return (
     <>
       <Head>
-        {/* <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-          rel="stylesheet"
-        /> */}
+        
       </Head>
-
+      
       <Container 
         maxW={'12x3'} 
         backgroundColor={'pink.900'} 
         backgroundImage={'url(https://images.pexels.com/photos/5659016/pexels-photo-5659016.jpeg?cs=srgb&dl=pexels-ivan-samkov-5659016.jpg&fm=jpg)'}
         backgroundSize={'cover'}
         backgroundPosition={'center'}
+        height={'xl'}
         >
-        
+        <Navbar/>
         <Stack
           as={Box}
           textAlign={'center'}
@@ -39,7 +38,7 @@ export default function CallToActionWithAnnotation() {
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
             Nora <br />
-            <Text as={'span'} color={'pink.400'}>
+            <Text as={'span'} color={'white'}>
               Estetica Integral
             </Text>
           </Heading>
