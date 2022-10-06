@@ -3,15 +3,14 @@ import Navbar from '../components/navbarComponent'
 import Hero from '../components/heroComponent'
 import  SmallWithLogoLeft from '../components/smallFooter';
 import Features from '../components/features'
-import Section from '../components/section'
-import { url } from 'inspector';
-import Card from '../components/card'
+import WspButton from '../components/wspButton';
 const IndexPage =()=>{
   return(
     <>
       <Hero/>
       <Features titulo='Tratamientos'/>
-      <Features 
+      <Features
+        show='1' 
         cardImage='url(https://lh3.googleusercontent.com/ZIs5oFXxQCqSLaIDxoCj-mYd36itYe_AR3otOAbhA4JjmKVUyU-BWWAohniWHtrxfhEHyIYsLzB962hSRAYCBnRrCGAEkeGeWCaDEGanJJVjKLhIGtZjbtRpWni38U7Aok9PVI3Y)'
         colorT='white'
         titulo='Promociones' 
@@ -21,6 +20,7 @@ const IndexPage =()=>{
         
       <Features titulo='Conocenos'/>
       <SmallWithLogoLeft/>
+      <WspButton/>
       
     </>
     
