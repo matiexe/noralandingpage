@@ -16,7 +16,7 @@ export default function blogPostWithImage(props) {
       <Box
         maxW={'479px'}
         w={'479'}
-        bgImg={'url(https://images.pexels.com/photos/5659016/pexels-photo-5659016.jpeg?cs=srgb&dl=pexels-ivan-samkov-5659016.jpg&fm=jpg)'}
+        bgImg={props.image}
         bgPosition={'center'}
         bgRepeat={'no-repeat'}
         bgSize={'cover'}
